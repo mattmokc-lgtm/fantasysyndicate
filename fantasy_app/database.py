@@ -2,7 +2,7 @@
 import sqlite3
 import pandas as pd
 
-DB_PATH = "fantasy.db"
+DB_PATH = "/workspaces/fantasysyndicate/fantasy_app/pages/fantasy.db"
 
 def get_conn():
     conn = sqlite3.connect(DB_PATH, check_same_thread=False)
