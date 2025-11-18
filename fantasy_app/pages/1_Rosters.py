@@ -1,5 +1,5 @@
 import streamlit as st
-#import fantasy_app.database #import query
+#import fantasy_app.database import query
 import sqlite3
 import pandas as pd
 
@@ -84,7 +84,7 @@ st.dataframe(
             format="$%.2f",
         )
     },
-    use_container_width=True,
+    
     hide_index=True
 )
 
@@ -104,5 +104,5 @@ st.dataframe(
             format="%d" # Optional: Format year as an integer with no decimals
         )
     },
-    use_container_width=True
+   
 )
