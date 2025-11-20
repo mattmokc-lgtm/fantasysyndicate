@@ -1,5 +1,4 @@
 import streamlit as st
-#import fantasy_app.database import query
 import sqlite3
 import pandas as pd
 
