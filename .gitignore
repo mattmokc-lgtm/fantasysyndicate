@@ -167,3 +167,8 @@ fantasy_app/pages/fantasy.db
 
 # Streamlit secrets file
 .streamlit/
+
+# Logos
+fantasy_app/pages/League_Logos/
+# Player photos
+fantasy_app/pages/player_photos/
