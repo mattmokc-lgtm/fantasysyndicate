@@ -3,9 +3,14 @@ import sqlite3
 import pandas as pd
 import os
 import altair as alt
+import streamlit_authenticator as stauth
 
+# --- Page Access Protection ---
+if "authentication_status" not in st.session_state or st.session_state["authentication_status"] != True:
+    st.error("You must log in to access this page.")
+    st.stop()  # Prevents the rest of the page from rendering
 
-DB_PATH = "/workspaces/fantasysyndicate/fantasy_app/pages/fantasy.db"
+DB_PATH = st.secrets["DB_PATH"]
 
 def get_conn():
     conn = sqlite3.connect(DB_PATH, check_same_thread=False)

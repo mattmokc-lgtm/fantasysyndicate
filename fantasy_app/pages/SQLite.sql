@@ -1,0 +1,5 @@
+-- SQLite
+SELECT *
+FROM contracts;
+
+
